@@ -1,7 +1,7 @@
 import React from "react";
 import { ProgressBar, ButtonToolbar } from "react-bootstrap";
 import "./Dashboard.scss";
-// import Execution from "../execution/Execution";
+import Execution from "../execution/Execution";
 import ModalPopup from "../common/modal/Modal";
 import Alert from "react-s-alert";
 
@@ -229,12 +229,12 @@ class Dashboard extends React.Component {
             />
           </ButtonToolbar>
         </div>
-        {/* <h4 className="top-heading">Last Build Details</h4>
+        <h4 className="top-heading">Last Build Details</h4>
         <Execution
           ref={ref}
           jobName={this.state.jobName}
           threadCount={this.state.threadCount}
-        /> */}
+        />
       </div>
     );
   }

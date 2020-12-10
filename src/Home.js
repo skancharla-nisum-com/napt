@@ -10,6 +10,9 @@ import Footer from "./footer/Footer";
 
 // Routeing modules imported
 import Dashboard from './dashboard/Dashboard';
+import Summary from './summary/Summary'
+import Detail from './detail/Detail'
+
 
 
 // const mapStateToProps = (state) => {
@@ -56,8 +59,8 @@ class Home extends Component {
               </div>
               <div className="main-content">
                   <Route path={`/execution`} component={Dashboard}/>
-                  {/* <Route path={`/kibana_project_summary`} component={Summary}/>
-                  <Route path={`/kibana_detail`} component={Detail}/> */}
+                  <Route path={`/kibana_project_summary`} component={Summary}/>
+                  <Route path={`/kibana_detail`} component={Detail}/>  
                   {/* <Route path={`/kibana_summary`}  />
                 <Route path={`/kibana_detail`}  />
                 <Route path={`/fail_report`}  />
