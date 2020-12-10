@@ -94,40 +94,44 @@ class Detail extends React.Component {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="mt-5 Project-info">
+        <div className="mt-5">
           <h4 className="side-heading">Scenario Execution Summary</h4>
-          <Table responsive striped bordered hover>
-            <thead>
-              <tr>
-                {headings.map((heading, index) => (
-                  <th key={index}>{heading}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {details.map((detail, detailIndex) => (
-                <tr key={detailIndex}>
-                  {Object.keys(detail).map((record, recordIndex) => (
-                    <td key={recordIndex}>
-                      <div className="d-flex justify-content-between">
-                        <div>{detail[record]}</div>
-                        <div>
-                          {recordIndex === 0 && (
-                            <i
-                              className="fa fa-search"
-                              aria-hidden="true"
-                            ></i>
-                          )}
-                        </div>
-                      </div>
-                    </td>
+          <div className="row Project-info">
+            <div className="col-12">
+                <Table responsive striped bordered hover>
+                <thead>
+                  <tr>
+                    {headings.map((heading, index) => (
+                      <th key={index}>{heading}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {details.map((detail, detailIndex) => (
+                    <tr key={detailIndex}>
+                      {Object.keys(detail).map((record, recordIndex) => (
+                        <td key={recordIndex}>
+                          <div className="d-flex justify-content-between">
+                            <div>{detail[record]}</div>
+                            <div>
+                              {recordIndex === 0 && (
+                                <i
+                                  className="fa fa-search"
+                                  aria-hidden="true"
+                                ></i>
+                              )}
+                            </div>
+                          </div>
+                        </td>
+                      ))}
+                    </tr>
                   ))}
-                </tr>
-              ))}
-            </tbody>
-          </Table>
+                </tbody>
+            </Table>
+            </div>
+            </div>
+            </div>
         </div>
 
         <ModalPopup

@@ -71,7 +71,7 @@ render() {
 
           </div>
 
-          <div class="mt-5">
+          <div className="mt-5">
           <h4 className="side-heading">Project Execution Summary</h4>
           {/* Table goes here  */}
           <div className="row Project-info">
